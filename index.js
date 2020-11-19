@@ -6,7 +6,7 @@ var fs = require('fs');
 const app = express();
 
 app.get('/', function(req,res){
-  res.sendFile(path.join(__dirname + '/home.html'));
+  res.sendFile(__dirname + '/home.html');
 })
 
 app.post('/fileupload', function (req, res) {
